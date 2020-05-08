@@ -97,3 +97,47 @@ a:
 	}
 	return sideLenght * sideLenght
 }
+
+/**
+我就发现了，出题的人就有些... ，为啥非要用 byte 呢？ int 数组它不香吗
+*/
+func dpMaximalSquare(matrix [][]byte) int {
+
+	if matrix == nil || len(matrix) == 0 || len(matrix[0]) == 0 {
+		return 0
+	}
+	maxSquare := 0
+	for i := 0; i < len(matrix); i++ {
+		for j := 0; j < len(matrix[i]); j++ {
+			if i == 0 || j == 0 {
+				maxSquare = maxx(maxSquare, int(matrix[i][j]-'0'))
+				continue
+			}
+			if matrix[i][j] == '1' {
+				min := minx(int(matrix[i-1][j]-'0'), int(matrix[i][j-1]-'0'), int(matrix[i-1][j-1]-'0'))
+
+				matrix[i][j] = byte(min + 1 + '0')
+				maxSquare = maxx(maxSquare, min+1)
+			}
+		}
+	}
+	return maxSquare * maxSquare
+}
+
+func maxx(i1 int, i2 int) int {
+	if i1-i2 > 0 {
+		return i1
+	}
+	return i2
+}
+
+func minx(b1 int, b2 int, b3 int) int {
+	return miny(miny(b1, b2), b3)
+}
+
+func miny(b1 int, b2 int) int {
+	if b1-b2 > 0 {
+		return b2
+	}
+	return b1
+}

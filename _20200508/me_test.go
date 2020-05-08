@@ -48,3 +48,22 @@ func TestMaximalSquareWithMe(t *testing.T) {
 	*/
 
 }
+
+func TestMaximalSquare(t *testing.T) {
+
+	fmt.Println('0')
+	v := '0' + 2
+	fmt.Println(v)
+	fmt.Println(byte(v))
+
+	matrix := [][]byte{
+		{'1', '0', '1', '0', '0'},
+		{'1', '0', '1', '1', '1'},
+		{'1', '1', '1', '1', '1'},
+		{'1', '0', '0', '1', '0'},
+	}
+
+	res := dpMaximalSquare(matrix)
+	fmt.Println("Result --> ", res)
+
+}
