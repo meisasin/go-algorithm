@@ -35,7 +35,6 @@ func sumNumsWithMe(n int) int {
 		nu--
 		return nu > 0 && sumR(nu)
 	}
-
 	sumR(n)
 	return ans
 }
