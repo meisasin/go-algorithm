@@ -1,5 +1,7 @@
 package main
 
+import "math"
+
 /**
 除自身以外数组的乘积
 
