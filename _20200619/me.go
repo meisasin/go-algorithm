@@ -1,5 +1,7 @@
 package main
 
+import "strings"
+
 /**
 验证回文串
 
@@ -25,37 +27,29 @@ package main
 
 func isPalindromeWithMe(s string) bool {
 
+	s = strings.ToLower(s)
 	l, r := 0, len(s)-1
 
 	for l < r {
-		if !vaild(s[l]) {
+		for l < r && !vaild(s[l]) {
 			l++
-			continue
 		}
-		if !vaild(s[r]) {
+		for l < r && !vaild(s[r]) {
 			r--
-			continue
 		}
-		if toCase(s[l]) == toCase(s[r]) {
-			l++
-			r--
-		} else {
+		if s[l] != s[r] {
 			return false
-		}
-	}
 
+		}
+		l++
+		r--
+	}
 	return true
 }
 
 func vaild(u uint8) bool {
-	if (u >= 'A' && u <= 'Z') || (u >= 'a' && u <= 'z') || (u >= '0' && u <= '9') {
+	if (u >= 'a' && u <= 'z') || (u >= '0' && u <= '9') {
 		return true
 	}
 	return false
-}
-func toCase(u uint8) uint8 {
-	if u >= 'a' && u <= 'z' {
-		return u - 32
-	}
-	return u
 }
