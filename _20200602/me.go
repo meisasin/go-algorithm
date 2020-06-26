@@ -26,7 +26,7 @@ package main
 /**
 一直想着递归时返回和，绕进去了没出来，其实还真是，在递归函数里面计算，在外部用个全局变量累加就可以了
 */
-func sumNumsWithMe(n int) int {
+func SumNums(n int) int {
 
 	ans := 0
 	var sumR func(int) bool

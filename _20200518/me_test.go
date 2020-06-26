@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestMaxProductWithMe(t *testing.T) {
+func TestMaxProduct(t *testing.T) {
 
 }

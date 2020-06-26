@@ -26,7 +26,7 @@ import (
 /**
 循环到 len(nums) - 1, 最后一个元素不访问，因为到达最后一个元素之后，就不会再往后跳跃了
 */
-func jumpWithMe(nums []int) int {
+func Jump(nums []int) int {
 
 	maxPosition := 0
 	end := 0

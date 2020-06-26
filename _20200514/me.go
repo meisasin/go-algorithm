@@ -25,7 +25,7 @@ package main
 /**
 这题之前做过哎...,没理解线性时间复杂度是什么意思，不使用额外空间是不能定义变量吗？ 那样的话，直接每次循环的时候，都更新数组的值来保存上一次 ^= 后的值也可以 (试了下，内存占用和执行速度都变慢了，不知道为什么)
 */
-func singleNumberWithMe(nums []int) int {
+func SingleNumber(nums []int) int {
 	num := 0
 	for _, i := range nums {
 		num ^= i

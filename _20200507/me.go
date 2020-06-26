@@ -50,7 +50,7 @@ package main
 /**
 看来确实是道简单的题，自己写的居然和官网第一种算法大差不差，其实第二种使用 KMP 实现的也想到了，闲太麻烦了没用
 */
-func isSubtreeWithMe(s *TreeNode, t *TreeNode) bool {
+func IsSubtree(s *TreeNode, t *TreeNode) bool {
 
 	return searchAndCheck(s, t)
 

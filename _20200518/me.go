@@ -25,7 +25,7 @@ package main
 并不简单，一遇到动态规划就懵逼
 
 */
-func maxProductWithMe(nums []int) int {
+func MaxProduct(nums []int) int {
 
 	maxF, minF, ans := nums[0], nums[0], nums[0]
 

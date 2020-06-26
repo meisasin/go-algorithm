@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestMaxScoreSightseeingPairWithMe(t *testing.T) {
+func TestMaxScoreSightseeingPair(t *testing.T) {
 
 }

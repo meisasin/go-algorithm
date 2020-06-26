@@ -30,7 +30,7 @@ package main
 /**
 左右往中间对比，如果存在不同的，从不同的索引开始，各舍弃前后两个索引生成两个字段串，再进行对比，如果有一个是回文，即是对的
 */
-func findTheLongestSubstringWithMe(s string) int {
+func FindTheLongestSubstring(s string) int {
 	ans, status := 0, 0
 	pos := make([]int, 1<<5)
 	for i := 0; i < len(pos); i++ {

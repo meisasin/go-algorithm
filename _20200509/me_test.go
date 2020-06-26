@@ -28,10 +28,10 @@ import (
      由于返回类型是整数，小数部分将被舍去。
 ```
 */
-func TestMySqrtWithMe(t *testing.T) {
-	fmt.Println(mySqrtWithMe(4))
-	fmt.Println(mySqrtWithMe(8))
-	fmt.Println(mySqrtWithMe(10))
+func TestMySqrt(t *testing.T) {
+	fmt.Println(MySqrt(4))
+	fmt.Println(MySqrt(8))
+	fmt.Println(MySqrt(10))
 
 	fmt.Println("------------------------------------")
 

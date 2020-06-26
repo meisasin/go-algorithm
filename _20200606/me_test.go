@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func TestLongestConsecutiveWithMe(t *testing.T) {
+func TestLongestConsecutive(t *testing.T) {
 
-	longestConsecutiveWithMe([]int{100, 1, 300})
+	LongestConsecutive([]int{100, 1, 300})
 
 }

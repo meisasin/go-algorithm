@@ -61,7 +61,7 @@ costs = [2,7,15]
 为期三十天：15$  --> 每天 0.5$ -> 优先选择
 
 */
-func mincostTicketsWithMe(days []int, costs []int) int {
+func MincostTickets(days []int, costs []int) int {
 
 	return -1
 

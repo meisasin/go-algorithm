@@ -31,12 +31,11 @@ import "math"
 
 	二分查找法本来还想到来着，有点笨了，居然没试试，但是有个很明显的缺陷，没办法精确小数位
 */
-func mySqrtWithMe(x int) int {
+func MySqrt(x int) int {
 	ans := int(math.Exp(0.5 * math.Log(float64(x))))
 	if (ans+1)*(ans+1) <= x {
 		return ans + 1
 	}
-	math.Sqrt()
 	return ans
 }
 

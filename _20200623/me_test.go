@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestAddBinaryWithMe(t *testing.T) {
+func TestAddBinary(t *testing.T) {
 
 }

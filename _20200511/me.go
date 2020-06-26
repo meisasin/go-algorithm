@@ -27,7 +27,7 @@ Pow(x, n)
 /**
 最近的题目口味怎么变了
 */
-func myPowWithMe(x float64, n int) float64 {
+func MyPow(x float64, n int) float64 {
 
 	isFu := false
 	if n == 0 {

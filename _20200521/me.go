@@ -22,7 +22,7 @@ package main
 /**
 写的有点长哟~~~ ,好的呢好的呢
 */
-func longestPalindromeWithMe(s string) string {
+func LongestPalindrome(s string) string {
 	ml := 0
 	mr := -1
 	for i := 0; i < len(s); i++ {

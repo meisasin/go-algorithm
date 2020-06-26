@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestTranslateNumWithMe(t *testing.T) {
+func TestTranslateNum(t *testing.T) {
 
 }

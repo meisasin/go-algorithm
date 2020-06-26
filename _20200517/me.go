@@ -45,7 +45,7 @@ package main
 没思路
 
 */
-func findOrderWithMe(numCourses int, prerequisites [][]int) []int {
+func FindOrder(numCourses int, prerequisites [][]int) []int {
 
 	depes := make([][]int, numCourses)
 	visited := make([]int, numCourses)

@@ -25,7 +25,7 @@ import "strings"
 简单题，代码写的确实有点长了，一点都不优雅，一会去找找 Go 自带的校验和转换方法，就不用自己写方法了
 */
 
-func isPalindromeWithMe(s string) bool {
+func IsPalindrome(s string) bool {
 
 	s = strings.ToLower(s)
 	l, r := 0, len(s)-1

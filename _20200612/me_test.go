@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestThreeSumWithMe(t *testing.T) {
+func TestThreeSum(t *testing.T) {
 
 }

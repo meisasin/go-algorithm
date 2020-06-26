@@ -36,7 +36,7 @@ package main
  *     Right *TreeNode
  * }
  */
-func levelOrderWithMe(root *TreeNode) [][]int {
+func LevelOrder(root *TreeNode) [][]int {
 
 	var stack []*TreeNode
 	if root != nil {

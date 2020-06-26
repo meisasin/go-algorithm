@@ -37,7 +37,7 @@ import "fmt"
  *     Right *TreeNode
  * }
  */
-func buildTreeWithMe(preorder []int, inorder []int) *TreeNode {
+func BuildTree(preorder []int, inorder []int) *TreeNode {
 	var idxMap = map[int]int{}
 
 	idxMap[1] = 10

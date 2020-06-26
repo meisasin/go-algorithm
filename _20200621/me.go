@@ -35,7 +35,7 @@ import (
  *     Right *TreeNode
  * }
  */
-func maxPathSumWithMe(root *TreeNode) int {
+func MaxPathSum(root *TreeNode) int {
 
 	_, max := depth(root)
 	return max

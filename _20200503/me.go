@@ -21,7 +21,7 @@ import "math"
 /**
 今天的简单题有点不简单
 */
-func maxSubArrayWithMe(nums []int) int {
+func MaxSubArray(nums []int) int {
 
 	// 之前总和
 	var sum int

@@ -39,6 +39,6 @@ package main
 /**
   ~~~~  我去，题看不懂，好像是数学中的概率学
 */
-func new21GameWithMe(N int, K int, W int) float64 {
+func New21Game(N int, K int, W int) float64 {
 	return -1
 }

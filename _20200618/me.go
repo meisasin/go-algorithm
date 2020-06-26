@@ -46,7 +46,7 @@ import (
  *     Right *TreeNode
  * }
  */
-func recoverFromPreorderWithMe(S string) *TreeNode {
+func RecoverFromPreorder(S string) *TreeNode {
 
 	con, text := context(S)
 	S = text

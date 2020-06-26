@@ -25,7 +25,7 @@ import "math"
 暴力吧，超时。感觉是用动态规划，没找到逻辑点
 */
 
-func maxScoreSightseeingPairWithMe(A []int) int {
+func MaxScoreSightseeingPair(A []int) int {
 	max := math.MinInt64
 	for i := 0; i < len(A); i++ {
 		for j := i + 1; j < len(A); j++ {

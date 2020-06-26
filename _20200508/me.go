@@ -31,7 +31,7 @@ import (
 执行用时 : 68 ms , 在所有 Go 提交中击败了 5.34% 的用户
 内存消耗 : 7.3 MB , 在所有 Go 提交中击败了 11.11% 的用户
 */
-func maximalSquareWithMe(matrix [][]byte) int {
+func MaximalSquare(matrix [][]byte) int {
 
 	// 定义一个队列，用于存储值为 1 的索引
 	var queue [][]int
@@ -53,7 +53,6 @@ func maximalSquareWithMe(matrix [][]byte) int {
 	}
 
 	return maxSquare
-
 }
 
 /**

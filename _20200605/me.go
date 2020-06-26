@@ -29,7 +29,7 @@ import "math"
 /**
   发现了一点，简单题从来不套路，中等题从来都是套路，困难题肯定要用到高级算法
 */
-func spiralOrderWithMe(matrix [][]int) []int {
+func SpiralOrder(matrix [][]int) []int {
 
 	point := []int{0, 0}
 

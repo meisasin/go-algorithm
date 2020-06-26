@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestThreeSumClosestWithMe(t *testing.T) {
+func TestThreeSumClosest(t *testing.T) {
 
 }

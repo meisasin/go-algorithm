@@ -20,6 +20,6 @@ package main
 /**
 太晚了，今天过了吧
 */
-func subarraySumWithMe(nums []int, k int) int {
+func SubarraySum(nums []int, k int) int {
 	return -1
 }

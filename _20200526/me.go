@@ -27,7 +27,7 @@ package main
 /**
 正常逻辑的方法
 */
-func findDuplicateWithMe(nums []int) int {
+func FindDuplicate(nums []int) int {
 
 	for i := 0; i < len(nums)-1; i++ {
 		for j := i + 1; j < len(nums); j++ {

@@ -44,7 +44,7 @@ import (
 
 ```
 */
-func TestIsSubtreeWithMe(t *testing.T) {
+func TestIsSubtree(t *testing.T) {
 
 	sRoot := TreeNode{Val: 3}
 
@@ -71,6 +71,6 @@ func TestIsSubtreeWithMe(t *testing.T) {
 	tRoot.Left = &tLeft1
 	tRoot.Right = &tRight1
 
-	fmt.Println("isSubtree: ", isSubtreeWithMe(&sRoot, &tRoot))
+	fmt.Println("isSubtree: ", IsSubtree(&sRoot, &tRoot))
 
 }

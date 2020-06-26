@@ -36,7 +36,7 @@ package main
  *     Right *TreeNode
  * }
  */
-func isSymmetricWithMe(root *TreeNode) bool {
+func IsSymmetric(root *TreeNode) bool {
 
 	if root == nil {
 		return true

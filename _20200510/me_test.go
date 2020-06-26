@@ -35,6 +35,6 @@ import "testing"
  * }
  */
 
-func TestLowestCommonAncestorWithMe(t *testing.T) {
+func TestLowestCommonAncestor(t *testing.T) {
 
 }

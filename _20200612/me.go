@@ -24,7 +24,7 @@ package main
 */
 import "sort"
 
-func threeSumWithMe(nums []int) [][]int {
+func ThreeSum(nums []int) [][]int {
 
 	var ans [][]int
 

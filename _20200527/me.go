@@ -24,7 +24,7 @@ package main
 /**
 O(n) 是不可能 O(n), 就会简单的暴力解法, 一言不合就是数学公式题, 我太难了
 */
-func subarraysDivByKWithMe(A []int, K int) int {
+func SubarraysDivByK(A []int, K int) int {
 	num := 0
 	for i := 0; i < len(A); i++ {
 		count := 0

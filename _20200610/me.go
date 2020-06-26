@@ -33,7 +33,7 @@ package main
 /**
 之前做过这题
 */
-func isPalindromeWithMe(x int) bool {
+func IsPalindrome(x int) bool {
 
 	if x < 0 {
 		return false

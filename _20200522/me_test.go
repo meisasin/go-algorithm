@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func TestBuildTreeWithMe(t *testing.T) {
+func TestBuildTree(t *testing.T) {
 
-	buildTreeWithMe([]int{}, []int{})
+	BuildTree([]int{}, []int{})
 
 }

@@ -39,7 +39,7 @@ package main
 - `1 <= extraCandies <= 50`
 */
 
-func kidsWithCandiesWithMe(candies []int, extraCandies int) []bool {
+func KidsWithCandies(candies []int, extraCandies int) []bool {
 	lenght := len(candies)
 	maxVal := candies[0]
 	for i := 1; i < lenght; i++ {

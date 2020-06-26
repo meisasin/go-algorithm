@@ -22,7 +22,7 @@ import (
 /**
 到底还是用到了 sort 函数，不过时间复杂度和空间复杂度还是很优的
 */
-func longestConsecutiveWithMe(nums []int) int {
+func LongestConsecutive(nums []int) int {
 
 	if len(nums) == 0 {
 		return 0

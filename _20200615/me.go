@@ -24,7 +24,7 @@ package main
 不太对啊，一道简单题我写了这么长的代码吗？
 */
 
-func longestCommonPrefixWithMe(strs []string) string {
+func LongestCommonPrefix(strs []string) string {
 
 	// 优化前
 	//if len(strs) == 0 {

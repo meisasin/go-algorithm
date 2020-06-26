@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestLargestRectangleAreaWithMe(t *testing.T) {
+func TestLargestRectangleArea(t *testing.T) {
 
 }

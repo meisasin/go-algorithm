@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestEquationsPossibleWithMe(t *testing.T) {
+func TestEquationsPossible(t *testing.T) {
 
 }

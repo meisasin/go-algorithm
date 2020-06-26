@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestDailyTemperaturesWithMe(t *testing.T) {
+func TestDailyTemperatures(t *testing.T) {
 
 }

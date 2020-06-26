@@ -20,7 +20,7 @@ package main
 /**
 这也太鸡难了，明明知道用动态规划，就是规划不出来
 */
-func translateNumWithMe(num int) int {
+func TranslateNum(num int) int {
 	// nothing to do
 	return -1
 }

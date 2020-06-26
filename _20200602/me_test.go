@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestSumNumsWithMe(t *testing.T) {
+func TestSumNums(t *testing.T) {
 
 	s := "1jkl;"
 	smap := map[uint8]bool{s[0]: true}

@@ -1,7 +1,5 @@
 package main
 
-import "math"
-
 /**
 除自身以外数组的乘积
 
@@ -24,7 +22,7 @@ import "math"
 /**
   不能用除法 ~~~
 */
-func productExceptSelfWithMe(nums []int) []int {
+func ProductExceptSelf(nums []int) []int {
 
 	var zeroIdx []int
 	var arr = make([]int, len(nums))

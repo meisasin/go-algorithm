@@ -28,7 +28,7 @@ import (
 好恶心这题，边界老是整差
 ERROR
 */
-func threeSumClosestWithMe(nums []int, target int) int {
+func ThreeSumClosest(nums []int, target int) int {
 
 	sort.Ints(nums)
 

@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestLongestPalindromeWithMe(t *testing.T) {
+func TestLongestPalindrome(t *testing.T) {
 
 }

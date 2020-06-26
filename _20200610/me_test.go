@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestIsPalindromeWithMe(t *testing.T) {
+func TestIsPalindrome(t *testing.T) {
 
 }

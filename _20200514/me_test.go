@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestSingleNumberWithMe(t *testing.T) {
+func TestSingleNumber(t *testing.T) {
 
 }

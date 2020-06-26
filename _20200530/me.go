@@ -11,7 +11,7 @@ package main
 /**
 写懵逼了, 还是得先用暴力解法写，要不然会绕进去，出不来，把暴力解法都忘了
 */
-func largestRectangleAreaWithMe(heights []int) int {
+func LargestRectangleArea(heights []int) int {
 	if len(heights) == 0 {
 		return 0
 	}

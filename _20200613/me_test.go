@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestClimbStairsWithMe(t *testing.T) {
+func TestClimbStairs(t *testing.T) {
 
 }

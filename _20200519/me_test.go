@@ -5,11 +5,11 @@ import (
 	"testing"
 )
 
-func TestValidPalindromeWithMe(t *testing.T) {
+func TestValidPalindrome(t *testing.T) {
 
-	res := validPalindromeWithMe("abc")
+	res := ValidPalindrome("abc")
 	fmt.Println("Res is ", res)
 
-	res = validPalindromeWithMe("abca")
+	res = ValidPalindrome("abca")
 	fmt.Println("Res is ", res)
 }

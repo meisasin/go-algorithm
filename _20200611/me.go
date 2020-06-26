@@ -33,7 +33,7 @@ package main
 /**
 还是暴力吧，简单，明了
 */
-func dailyTemperaturesWithMe(T []int) []int {
+func DailyTemperatures(T []int) []int {
 
 	le := len(T)
 	var ans []int

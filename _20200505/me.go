@@ -40,7 +40,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func isValidBSTWithMe(root *TreeNode) bool {
+func IsValidBST(root *TreeNode) bool {
 	if root == nil {
 		return true
 	}

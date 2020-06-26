@@ -22,7 +22,7 @@ import (
 ```
 */
 
-func TestMaximalSquareWithMe(t *testing.T) {
+func TestMaximalSquare(t *testing.T) {
 
 	matrix := [][]byte{
 		{1, 0, 1, 0, 0},
@@ -31,7 +31,7 @@ func TestMaximalSquareWithMe(t *testing.T) {
 		{1, 0, 0, 1, 0},
 	}
 
-	res := maximalSquareWithMe(matrix)
+	res := MaximalSquare(matrix)
 	fmt.Println("Result --> ", res)
 
 	/*
@@ -49,7 +49,7 @@ func TestMaximalSquareWithMe(t *testing.T) {
 
 }
 
-func TestMaximalSquare(t *testing.T) {
+func TestDpMaximalSquare(t *testing.T) {
 
 	fmt.Println('0')
 	v := '0' + 2

@@ -5,9 +5,9 @@ import (
 	"testing"
 )
 
-func TestLongestCommonPrefixWithMe(t *testing.T) {
+func TestLongestCommonPrefix(t *testing.T) {
 
-	a := longestCommonPrefixWithMe([]string{" aaa"})
+	a := LongestCommonPrefix([]string{" aaa"})
 	fmt.Print(a)
 
 }

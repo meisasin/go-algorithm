@@ -27,7 +27,7 @@ import (
 - 字符串如果不是 `"0"` ，就都不含前导零。
 */
 
-func addBinaryWithMe(a string, b string) string {
+func AddBinary(a string, b string) string {
 
 	maxL := max(len(a), len(b))
 

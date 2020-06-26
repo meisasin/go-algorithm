@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestSubarraySumWithMe(t *testing.T) {
+func TestFindOrder(t *testing.T) {
 
 }

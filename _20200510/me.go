@@ -44,7 +44,7 @@ p、q 为不同节点且均存在于给定的二叉树中。
 好吧，今天这题有点做不出来
 	我发现我对 TreeNode 有恐惧症，这个结构体是真的难用
 */
-func lowestCommonAncestorWithMe(root, p, q *TreeNode) *TreeNode {
+func LowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
 	var pcenter []int
 	var qcenter []int

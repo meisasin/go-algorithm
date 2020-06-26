@@ -42,7 +42,7 @@ package main
 /**
 没做出来 ಥ_ಥ
 */
-func equationsPossibleWithMe(equations []string) bool {
+func EquationsPossible(equations []string) bool {
 	ans := true
 	// fmt.Println(equations)
 

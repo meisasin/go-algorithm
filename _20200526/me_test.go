@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestFindDuplicateWithMe(t *testing.T) {
+func TestFindDuplicate(t *testing.T) {
 
 }

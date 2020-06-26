@@ -53,7 +53,7 @@ import (
 修修补补，思路到底还是错的
 ERROR
 */
-func patternMatchingWithMe(pattern string, value string) bool {
+func PatternMatching(pattern string, value string) bool {
 	vlen := len(value)
 	plen := len(pattern)
 

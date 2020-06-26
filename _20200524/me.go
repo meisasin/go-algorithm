@@ -27,7 +27,7 @@ nums2 = [3, 4]
 /**
 执行的有点慢
 */
-func findMedianSortedArraysWithMe(nums1 []int, nums2 []int) float64 {
+func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 
 	res := merge(nums1, nums2)
 	if len(res)%2 == 0 {

@@ -27,7 +27,7 @@ package main
 ```
 */
 
-func climbStairsWithMe(n int) int {
+func ClimbStairs(n int) int {
 
 	p, q := 1, 1
 	for i := 2; i <= n; i++ {

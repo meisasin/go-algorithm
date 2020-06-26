@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestFindDuplicateWithMe(t *testing.T) {
+func TestSubarraysDivByK(t *testing.T) {
 
 }
