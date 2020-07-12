@@ -1,6 +1,9 @@
 package other
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func reverseStr(s string, k int) string {
 	ans := ""
@@ -35,4 +38,26 @@ func Change() {
 
 	fmt.Println(ans)
 
+}
+
+func reformatDate(date string) string {
+
+	monthMap := map[string]string{"Jan": "01", "Feb": "02", "Mar": "03", "Apr": "04", "May": "05", "Jun": "06", "Jul": "07", "Aug": "08", "Sep": "09", "Oct": "10", "Nov": "11", "Dec": "12"}
+
+	res := strings.Split(date, " ")
+	ans := res[2] + "-" + monthMap[res[1]] + "-"
+
+	day := ""
+	for i := 0; i < len(res[0]); i++ {
+		if res[0][i] >= '0' && res[0][i] <= '9' {
+			day += string(res[0][i])
+		} else {
+			break
+		}
+	}
+	if len(day) == 1 {
+		day = "0" + day
+	}
+	fmt.Println(day)
+	return ans + day
 }
