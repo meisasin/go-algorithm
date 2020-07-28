@@ -24,7 +24,7 @@ s = "axc", t = "ahbgdc"
 */
 
 /**
-...就喜欢做这种矩阵的题
+...
 */
 func IsSubsequence(s string, t string) bool {
 
