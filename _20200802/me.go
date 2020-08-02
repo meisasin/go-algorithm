@@ -32,7 +32,6 @@ package main
 
 /**
 为啥看见这种 TreeNode 题脑瓜子就疼
-ERROR
 */
 /**
  * Definition for a binary tree node.
@@ -59,14 +58,17 @@ func sortTree(root *TreeNode) (*TreeNode, *TreeNode) {
 	rtail, rlast := sortTree(right)
 	if root.Left != nil && root.Right != nil {
 		llast.Right = rtail
+		root.Left = nil
 		root.Right = ltail
 		return root, rlast
 	}
 	if root.Left != nil {
+		root.Left = nil
 		root.Right = ltail
 		return root, llast
 	}
 	if root.Right != nil {
+		root.Left = nil
 		root.Right = rtail
 		return root, rlast
 	}
