@@ -37,32 +37,24 @@ import "strconv"
 */
 func AddStrings(num1 string, num2 string) string {
 
-	carryBit := false
+	carryBit := 0
 	maxLen := max(len(num1), len(num2))
 	ans := ""
 	for i := 0; i < maxLen; i++ {
-		count := 0
+		count := carryBit
 		if i < len(num1) {
 			count += int(num1[len(num1)-i-1] - '0')
 		}
 		if i < len(num2) {
 			count += int(num2[len(num2)-i-1] - '0')
 		}
-		if carryBit {
-			count += 1
-		}
-		if count > 9 {
-			carryBit = true
-			count -= 10
-		} else {
-			carryBit = false
-		}
-		ans = strconv.Itoa(count) + ans
+		ans = strconv.Itoa(count%10) + ans
+		carryBit = count / 10
 	}
-	if carryBit {
-		ans = "1" + ans
+	if carryBit == 0 {
+		return ans
 	}
-	return ans
+	return "1" + ans
 }
 
 func max(a, b int) int {
