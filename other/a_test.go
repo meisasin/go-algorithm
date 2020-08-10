@@ -247,3 +247,8 @@ func TestMaxProbability(t *testing.T) {
 	fmt.Println(ans)
 
 }
+
+func TestReplaceAll(t *testing.T) {
+
+	strings.ReplaceAll("1234rtfda", "r", "afd")
+}
