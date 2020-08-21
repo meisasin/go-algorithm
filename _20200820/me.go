@@ -63,7 +63,7 @@ Click : [1,2]
 */
 
 /*
-	这都 O(m * n) 的时间复杂度了，咋还能超时呢
+	这都 O(m * n) 的时间复杂度了，咋还能超时呢 >>> 好吧，放到 stack 里面后，再循环的时候需要再判断是否 == 'E', 因为一个点可能被多个点同时放入 stack, 就重复了，计算了多次
 */
 func UpdateBoard(board [][]byte, click []int) [][]byte {
 
@@ -84,6 +84,9 @@ func UpdateBoard(board [][]byte, click []int) [][]byte {
 		first := stack[0]
 		stack = stack[1:]
 		i, y := first[0], first[1]
+		if board[i][y] != 'E' {
+			continue
+		}
 		count := 0
 		var waitAppend [][]int
 		for n := 0; n < 8; n++ {
