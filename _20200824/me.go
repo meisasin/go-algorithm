@@ -1,5 +1,9 @@
 package main
 
+import (
+	"strings"
+)
+
 /**
 459. 重复的子字符串
 
@@ -71,4 +75,11 @@ func RepeatedSubstringPattern(s string) bool {
 		}
 	}
 	return false
+}
+
+/**
+这个解法可太妙了
+*/
+func RepeatedSubstringPattern_MiaoA(s string) bool {
+	return strings.Index((s + s)[1:], s)+1 != len(s)
 }
