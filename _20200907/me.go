@@ -1,6 +1,9 @@
 package main
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
 /**
 347. 前 K 个高频元素
@@ -58,4 +61,34 @@ func TopKFrequent(nums []int, k int) []int {
 		}
 	}
 	return realAns
+}
+
+func topKFrequenaat(nums []int, k int) []int {
+
+	nl := len(nums)
+	m := map[int]int{} // key: 元素值  value: 数量
+	for i := 0; i < nl; i++ {
+		m[nums[i]]++
+	}
+	fmt.Println(m)
+
+	res := make([][]int, nl+1)
+	rl := len(res)
+	for k, v := range m {
+		res[v] = append(res[v], k)
+	}
+
+	var ans []int
+	for i := rl - 1; i >= 0; i-- {
+		nn := res[i]
+		if len(nn) > 0 {
+			for x := 0; x < len(nn); x++ {
+				ans = append(ans, nn[x])
+				if len(ans) == k {
+					return ans
+				}
+			}
+		}
+	}
+	return ans
 }
